@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Love You Himanshi ❤️</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(to right, #ff4e50, #fc913a);
+        color: white;
+        text-align: center;
+    }
+
+    .container {
+        padding: 50px 20px;
+    }
+
+    h1 {
+        font-size: 50px;
+        animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+        from { text-shadow: 0 0 10px #fff; }
+        to { text-shadow: 0 0 25px #ffdde1; }
+    }
+
+    p {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .love-img {
+        margin-top: 30px;
+        width: 300px;
+        border-radius: 20px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        transition: transform 0.5s;
+    }
+
+    .love-img:hover {
+        transform: scale(1.1);
+    }
+
+    .btn {
+        margin-top: 30px;
+        padding: 15px 30px;
+        font-size: 18px;
+        border: none;
+        border-radius: 30px;
+        background: white;
+        color: #ff4e50;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background: #ffdde1;
+    }
+
+    .hidden-message {
+        display: none;
+        margin-top: 20px;
+        font-size: 24px;
+        color: #fff;
+        animation: fadeIn 2s;
+    }
+
+    @keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+
+    footer {
+        margin-top: 50px;
+        font-size: 14px;
+        opacity: 0.7;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="container">
+    <h1>❤️ Love You Himanshi ❤️</h1>
+    <p>You are the most special person in my life 💖</p>
+
+    <img class="love-img" src="https://images.unsplash.com/photo-1518199266791-5375a83190b7" alt="love">
+
+    <br>
+    <button class="btn" onclick="showMessage()">Click Here 💌</button>
+
+    <div class="hidden-message" id="message">
+        💖 Himanshi, you make my world beautiful 💖 <br>
+        I love you forever ❤️
+    </div>
+
+    <footer>
+        Made with ❤️ by Prince
+    </footer>
+</div>
+
+<script>
+function showMessage() {
+    document.getElementById("message").style.display = "block";
+}
+</script>
+
+</body>
+</html>
