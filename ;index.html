@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Love You Himanshi ❤️</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #ff4e50, #fc913a);
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.container {
+    padding: 50px 20px;
+}
+
+h1 {
+    font-size: 50px;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px #fff; }
+    to { text-shadow: 0 0 25px #ffdde1; }
+}
+
+p {
+    font-size: 20px;
+    margin: 20px auto;
+    max-width: 700px;
+    line-height: 1.6;
+}
+
+.love-img {
+    width: 300px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.btn {
+    margin-top: 30px;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    background: white;
+    color: #ff4e50;
+    cursor: pointer;
+}
+
+.rose {
+    position: fixed;
+    top: -50px;
+    font-size: 24px;
+    animation: fall 4s linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+#finalMessage {
+    display: none;
+    font-size: 28px;
+    margin-top: 30px;
+}
+
+footer {
+    margin-top: 50px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+    <h1>❤️ Love You Himanshi ❤️</h1>
+
+    <img class="love-img" src="https://images.unsplash.com/photo-1518199266791-5375a83190b7">
+
+    <!-- SCROLL PARAGRAPHS -->
+    <p>
+        Himanshi, tum meri life ka sabse beautiful part ho 💖  
+        Tumhari smile meri duniya ko light kar deti hai ✨  
+    </p>
+
+    <p>
+        Sach me, tum jitni simple ho utni hi special ho ❤️  
+        Aur jab tum chashme me hoti ho na... toh aur bhi zyada cute aur beautiful lagti ho 😍  
+    </p>
+
+    <p>
+        Tumhari har ek baat, har ek smile, har ek moment mere liye precious hai 💕  
+        Main hamesha tumhe khush dekhna chahta hoon 😊  
+    </p>
+
+    <p>
+        Tum sirf beautiful nahi ho… tum ek amazing person ho ❤️  
+        Aur meri life me hone ke liye thank you 💖  
+    </p>
+
+    <!-- BUTTON -->
+    <button class="btn" onclick="showRoses()">Click Me 🌹</button>
+
+    <div id="finalMessage">
+        🌹 You are the best girl 🌹
+    </div>
+
+    <footer>Made with ❤️ by Prince</footer>
+</div>
+
+<script>
+function showRoses() {
+    document.getElementById("finalMessage").style.display = "block";
+
+    for (let i = 0; i < 30; i++) {
+        let rose = document.createElement("div");
+        rose.className = "rose";
+        rose.innerHTML = "🌹";
+        rose.style.left = Math.random() * 100 + "vw";
+        rose.style.animationDuration = (Math.random() * 3 + 2) + "s";
+        document.body.appendChild(rose);
+    }
+}
+</script>
+
+</body>
+</html>
